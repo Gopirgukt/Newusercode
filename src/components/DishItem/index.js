@@ -50,7 +50,7 @@ const DishItem = ({
           {dishCurrency} {dishPrice}
         </p>
         <p className="dish-description">{dishDescription}</p>
-        <p className="dish-calories-mobile calorie">{dishCalories}</p>
+        <p className="dish-calories-mobile calorie">{dishCalories} calories</p>
         {dishAvailability && renderControllerButton()}
         {!dishAvailability && (
           <p className="not-availability-text">Not available</p>
@@ -60,7 +60,7 @@ const DishItem = ({
         )}
       </div>
 
-      <p className="dish-calories calorie">{dishCalories}</p>
+      <p className="dish-calories calorie">{dishCalories} calories</p>
       <img className="dish-image" alt={dishName} src={dishImage} />
     </li>
   )
